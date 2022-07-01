@@ -1,3 +1,8 @@
+
+# 2
+# import sys
+# print("User Current Version:-", sys.version)
+
 #3. Write a Python program to display the current date and time.
 # import datetime
 # x = datetime.datetime.now()
