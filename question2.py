@@ -183,6 +183,16 @@
 # print("The gcd of 336 and 360 is : ", end="")
 # print(math.gcd(a,b))
 
+# 32. Write a Python program to get the least common multiple (LCM) of two positive integers.
+# a=int(input("enter first"))
+# b=int(input("enter second"))
+# maxnum=max(a,b)
+# while(True):
+#     if (maxnum % a == 0 and maxnum % b ==0):
+#         break
+#     maxnum+=1
+# print(maxnum)
+
 # 33. Write a Python program to sum of three given integers. However, if two values are equal sum will be zero.
 # def sum_three(x, y, z):
 #     if x == y or y == z or x==z:
