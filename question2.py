@@ -341,6 +341,218 @@
 
 
 
+# 66.Write a Python program to calculate body mass index.
+# height = float(input("Input your height in Feet: "))
+# weight = float(input("Input your weight in Kilogram: "))
+# print("Your body mass index is: ", weight / (height/100)**2  )
+
+# 69.Write a Python program to sort three integers without using conditional statements and loops.
+# x = int(input("Input first number: "))
+# y = int(input("Input second number: "))
+# z = int(input("Input third number: "))
+# a1 = min(x, y, z)
+# a3 = max(x, y, z)
+# a2 = (x + y + z) - a1 - a3     #(condition)
+# print("Numbers in sorted order: ", a1, a2, a3)
+
+
+# 72. Write a Python program to get the details of math module.
+# # Imports the math module
+# import math            
+# #Sets everything to a list of math module
+# math_ls = dir(math) # 
+# print(math_ls)
+
+
+# 73. Write a Python program to calculate midpoints of a line. 
+# print('\nCalculate the midpoint of a line :')
+
+# x1 = float(input('The value of x (the first endpoint) '))
+# y1 = float(input('The value of y (the first endpoint) '))
+
+# x2 = float(input('The value of x (the first endpoint) '))
+# y2 = float(input('The value of y (the first endpoint) '))
+
+# x_m_point = (x1 + x2)/2
+# y_m_point = (y1 + y2)/2
+# print();
+# print("The midpoint of line is :")
+# print( "The midpoint's x value is: ",x_m_point)
+# print( "The midpoint's y value is: ",y_m_point)
+# print();
+
+# 75. Write a Python program to get the copyright information and write Copyright information in Python code.
+# import sys
+# print("\nPython Copyright Information")
+# print(sys.copyright)
+# print()
+
+# 80. Write a Python program to get the current value of the recursion limit.
+# import sys
+# print()
+# print("Current value of the recursion limit:")
+# print(sys.getrecursionlimit())
+# print()
+
+# 81. Write a Python program to concatenate N strings.
+# list_of_colors = ['Red', 'White', 'Black']  
+# colors = '-'.join(list_of_colors)
+# print()
+# print("All Colors: ",colors)
+# print()
+
+# 82. Write a Python program to calculate the sum of all items of a container (tuple, list, set, dictionary)
+# s = sum([10,20,30])
+# print("\nSum of the container: ", s)
+# print()
+
+# 84. Write a Python program to count the number occurrence of a specific character in a string
+# s = "The quick brown fox jumps over the lazy dog."  
+# print("Original string:")
+# print(s)
+# print("Number of occurrence of 'o' in the said string:")
+# print(s.count("o"))
+
+
+# 86. Write a Python program to get the ASCII value of a character
+# print()
+# print(ord('a'))
+# print(ord('A'))
+# print(ord('1'))
+# print(ord('@'))
+# print()
+
+# 88. Given variables x=30 and y=20, write a Python program to print "30+20=50". 
+# x = 30
+# y = 20
+# print("\n%d+%d=%d" % (x, y, x+y))
+# print()
+
+# 89. Write a Python program to perform an action if a condition is true.
+# Given a variable name, if the value is 1, display the string "First day of a Month!" and do nothing if the value is not equal.
+# n=1
+# if n == 1:
+#    print("\nFirst day of a Month!")
+# print()
+
+# 91. Write a Python program to swap two variables.
+# a = 30
+# b = 20
+# print("\nBefore swap a = %d and b = %d" %(a, b))
+# a, b = b, a
+# print("\nAfter swaping a = %d and b = %d" %(a, b))
+# print()
+
+
+# 92. Write a Python program to define a string containing special characters in various forms.
+# print("\#{'}${\"}@/")
+# print("\#{'}${"'"'"}@/")
+# print("""\#{'}${"}@/""")
+# print('\#{\'}${"}@/')
+# print('\#{'"'"'}${"}@/')
+# print('''\#{'}${"}@/''')
+
+# 93. Write a Python program to get the Identity, Type, and Value of an object.
+# x = "priya"
+# print("\nIdentity: ",x)
+# print("\nType: ",type(x))
+# print("\nValue: ",id(x))
+
+
+  
+#94. Write a Python program to convert a byte string to a list of integers.
+# x = b'GpG'              (Initializing a byte string as GpG)
+# print(list(x))
+
+
+# 95. Write a Python program to check whether a string is numeric     
+# string = '123ayu456'
+# print(string.isnumeric())
+    
+# string = '123456'
+# print(string.isnumeric())
+
+
+# 98. Write a Python program to get the system time. 
+# import time
+# print()
+# print(time.ctime())
+# print()
+
+# 99. Write a Python program to clear the screen or terminal
+# import.os
+# os.system("cls")
+
+
+# 100. Write a Python program to get the name of the host on which the routine is running.
+# import socket
+# host_name = socket.gethostname()
+# print("Host name:", host_name)
+
+
+# 103. Write a Python program to extract the filename from a given path.
+# import os
+# print()
+# print(os.path.basename('/home/seasia/python_prog'))
+# print()
+
+# 104. Write a Python program to get the effective group id, effective user id, real group id, a list of supplemental group ids associated with the current process.
+# import os
+# print("\nEffective group id: ",os.getegid())
+# print("Effective user id: ",os.geteuid())
+# print("Real group id: ",os.getgid())
+# print("List of supplemental group ids: ",os.getgroups())
+# print()
+
+
+# 105. Write a Python program to get the users environment
+# import os
+# print()
+# print(os.environ)
+# print()
+
+# 107. Write a Python program to retrieve file properties.
+# import os.path
+# import time
+# print('File         :', __file__)
+# print('Access time  :', time.ctime(os.path.getatime(__file__)))
+# print('Modified time:', time.ctime(os.path.getmtime(__file__)))
+# print('Change time  :', time.ctime(os.path.getctime(__file__)))
+# print('Size         :', os.path.getsize(__file__))
+
+
+    # 109. Write a Python program to check if a number is positive, negative or zero.
+    # num = float(input("Input a number: "))
+    # if num > 0:
+    #    print("It is positive number")
+    # elif num == 0:
+    #    print("It is Zero")
+    # else:
+    #    print("It is a negative num)
+    
+
+
+# 110. Write a Python program to get numbers divisible by fifteen from a list using an anonymous function.    
+# num_list = [45, 55, 60, 37, 100, 105, 220]
+# # use anonymous function to filter
+# result = list(filter(lambda x: (x % 15 == 0), num_list))
+# print("Numbers divisible by 15 are",result)
+
+
+# 112. Write a Python program to remove the first item from a specified list
+# color = ["Red", "Black", "Green", "White", "Orange"]
+# print("Original list elements:")
+# print(color)
+# del color[0]
+# print("After removing the first color:")
+# print(color
+
+
+# 114. Write a Python program to filter the positive numbers from a list
+# nums = [34, 1, 0, -23, 12, -88]
+# print("Original numbers in the list: ",nums)
+# new_nums = list(filter(lambda x: x >0, nums))
+# print("Positive numbers in the said list: ",new_nums)
 
 
 
