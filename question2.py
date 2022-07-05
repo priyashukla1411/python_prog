@@ -555,6 +555,166 @@
 # print("Positive numbers in the said list: ",new_nums)
 
 
+# 115. Write a Python program to compute the product of a list of integers (without using for loop)
+# from functools import reduce
+# nums = [10, 20, 30,]
+# print("Original list numbers:")
+# print(nums)
+# nums_product = reduce( (lambda x, y: x * y), nums)                   reduce(function, iterable, [, initializer])
+# print("\nProduct of the said numbers (without using for loop):",nums_product)
+
+
+
+# 116. Write a Python program to print Unicode characters.
+# str = u'\u0050\u0052\u0049\u0059\u0041'                         (https://en.wikipedia.org/wiki/List_of_Unicode_characters)
+# print()
+# print(str)
+# print()
+
+
+# 117. Write a Python program to prove that two string variables of same value point same memory location.
+# str1 = "Python"
+# str2 = "Python"
+# print("\nMemory location of str1 =", hex(id(str1)))
+# print("Memory location of str2 =", hex(id(str2)))
+# print()
+
+# 118. Write a Python program to create a bytearray from a list.      
+# nums = [10, 20, 56, 35, 17, 99]
+# # Create bytearray from list of integers.
+# values = bytearray(nums)
+# for x in values: print(x)
+
+
+# 119. Write a Python program to round a floating-point number to specified number decimal places
+# order_amt = float(input("enter number: "))
+# print('\nThe total order amount comes to %f' % order_amt)
+# print('The total order amount comes to %.3f' % order_amt)
+# print()
+
+# 120. Write a Python program to format a specified string limiting the length of a string
+# str_num = int(input("enter number: "))
+# print("Original string:",str_num)
+# print('%.6s' % str_num)
+# print('%.9s' % str_num)
+# print('%.10s' % str_num)
+
+#122.Write a Python program to empty a variable without destroying it.
+# d = {"x":200}
+# l = [1,3,5]
+# t= (5,7,8)
+# print(type(d)())
+# print(type(l)())
+# print(type(t)())
+
+# 123. Write a Python program to determine the largest and smallest integers, longs, floats. 
+# import sys
+# print("Float value information: ",sys.float_info)
+# print("\nInteger value information: ",sys.int_info)
+# print("\nMaximum size of an integer: ",sys.maxsize) 
+        
+        
+# 124. Write a Python program to check whether multiple variables have the same value.
+# p=int(input("enter number1: "))        
+# q=int(input("enter number2: "))  
+# s=int(input("enter number3: "))  
+# if p==q==s:
+#     print("values are equal")
+# else:
+#     print("values are not equal")    
+            
+
+#125. Write a Python program to sum of all counts in a collections
+# import collections
+# num = [2,2,4,6,6,8,6,10,4]
+# print(sum(collections.Counter(num).values()))        >>[collections.Counter(num).values() ]     
+
+# 128. Write a Python program to check whether lowercase letters exist in a string
+# str1 = input("enter the user data: ")
+# print(any(c.islower() for c in str1))
+
+
+#129. Write a Python program to add leading zeroes to a string.
+# str1=input("enter the number:")
+# print("Original String: ",str1)
+# str1 = str1.ljust(8, '0')
+# print(str1)
+
+#130. Write a Python program to use double quotes to display strings
+# p=""" "hellooooo" """
+# print(p)
+
+# 132. Write a Python program to list home directory without absolute path
+# import os.path
+# print(os.path.expanduser('~'))
+
+#134. Write a Python program to input two integers in a single line
+# print("Input the value of x & y & z")
+# x, y, z = map(int, input().split())
+# print("The value of x & y &z are: ",x,y,z)
+
+#135. Write a Python program to print a variable without spaces between values. 
+# x = int(input("enter number: "))
+# print('Value of x is',(x))
+
+# d = {'Red': 'Green'}
+# (c1, c2), = d.items()
+# print(c1)
+# print(c2)
+
+# 137. Write a Python program to extract single key-value pair of a dictionary in variables
+# p = {"Name": "Priya"}
+# (c1, c2), = p.items()
+# print(c1)
+# print(c2)
+
+
+# 138. Write a Python program to convert true to 1 and false to 0
+# x = 'true'
+# x = int(x == 'true')
+# print(x)
+# x = 'abcd'
+# x = int(x == 'true')
+# print(x)
+
+# 141. Write a python program to convert decimal to hexadecimal
+# x =  int(input("enter number: "))
+# print(format(x, '02x'))
+
+# 144. Write a Python program to check whether variable is integer or string. 
+# print(isinstance(25,int) or isinstance(25,str))
+# print(isinstance([25],int) or isinstance([25],str))
+# print(isinstance("25",int) or isinstance("25",str))
+
+
+# 145. Write a Python program to test if a variable is a list or tuple or a set.
+# x = ('tuple', False, 3.2, 1)
+# if type(x) is list:
+#     print('x is a list')
+# elif type(x) is set:
+#     print('x is a set')
+# elif type(x) is tuple:
+#     print('x is a tuple')    
+# else:
+#     print('Neither a list or a set or a tuple.')
+
+# 147. Write a Python function to check whether a number is divisible by another number. Accept two integers values form the user.
+# def multiple(m, n):
+#     	return True if m % n == 0 else False
+
+# print(multiple(25, 5))
+# print(multiple(13, 2))
+
+
+# 149. Write a Python function that takes a positive integer and returns the sum of the cube of all the positive integers smaller than the specified number.
+# def sum_of_cubes(n):
+#      n -= 1
+#  total = 0
+#  while n > 0:
+#    total += n * n * n
+#    n -= 1
+#  return total
+# print("Sum of cubes smaller than the specified number: ",sum_of_cubes(3))
 
 
 
