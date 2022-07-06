@@ -1,11 +1,14 @@
-# 1. 
-#print("Twinkle, twinkle, little star, \n\tHow I wonder what you are! \n\t\tUp above the world so high, \n\t\tLike a diamond in the sky. \nTwinkle, twinkle, little star, \n\tHow I wonder what you are!")
-# \n   new line
-# \t one tab differenece
+#1. Write a Python program to print the following string in a specific format (see the output). Go to the editor
+#Sample String : "Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are" 
 
-# 2
+# print("Twinkle, twinkle, little star, \n\tHow I wonder what you are! \n\t\tUp above the world so high, \n\t\tLike a diamond in the sky. \nTwinkle, twinkle, little star, \n\tHow I wonder what you are!")
+# # \n   new line
+# # \t one tab differenece
+
+
+#2. Write a Python program to get the Python version you are using. 
 # import sys
-# print("User Current Version:-", sys.version)
+# print("Python Version:-", sys.version)
 
 #3. Write a Python program to display the current date and time.
 # import datetime
@@ -19,7 +22,12 @@
 # p = 3.14*(a*a)
 # print("area of circle = ", p)
 
-#  Write a Python program which accepts a sequence of comma-separated numbers from user and generate a list and a tuple with those numbers
+#5.Write a Python program which accepts the user's first and last name and print them in reverse order with a space between them.5
+# fname = input("Input your First Name : ")
+# lname = input("Input your Last Name : ")
+# print (lname + " " + fname)
+
+# 6.Write a Python program which accepts a sequence of comma-separated numbers from user and generate a list and a tuple with those numbers
 # number = input("user input numbers : ")
 # list = number.split(",")
 # tuple = tuple(list)
@@ -40,12 +48,15 @@
 # print(c)
  
 
-# 9. Write a Python program to display the examination schedule. (extract the date from exam_st_date).
+#9. Write a Python program to display the examination schedule. (extract the date from exam_st_date).
 # schedule = input("enter student schedule : ")
 # f = "/".join(schedule)
 # print(schedule)
 # print(f)
  
+#9. Write a Python program to display the examination schedule. (extract the date from exam_st_date). 
+# exam_st_date = (11,12,2014)
+# print( "The examination will start from : %i / %i / %i"%exam_st_date)
  
  # 10. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn
 # a = int(input("Input an integer : "))
@@ -54,11 +65,32 @@
 # n3 = int( "%d%d%d" % (a,a,a) )
 # print (n1+n2+n3)
 
+#11. Write a Python program to print the documents (syntax, description etc.) of Python built-in function(s).
+#print(abs.__doc__)
+# x = abs(-67.78)
+# print(x)
+#Return the absolute value of a number. The argument may be an integer, a floating point number, or an object implementing __abs__(). If the argument is a complex number, its magnitude is returned.
+
+
 #  12. Write a Python program to print the calendar of a given month and year.
 # import calendar 
 # y = int(input ("enter year = "))
 # m = int(input("enter month = "))
 # print(calendar.month(y,m))
+
+# 13. Write a Python program to print the following 'here document'. Go to the editor
+# Sample string :
+# a string that you "don't" have to escape
+# This
+# is a ....... multi-line
+# heredoc string --------> example
+# print("""
+# a string that you "don't" have to escape
+# This
+# is a  ....... multi-line
+# heredoc string --------> example
+# """)
+
 
 
 # 14. Write a Python program to calculate number of days between two dates.
@@ -88,6 +120,15 @@
 
 # print(difference(18))
 
+# 17. Write a Python program to test whether a number is within 100 of 1000 or 2000
+# def near_thousand(n):
+#       return ((abs(1000 - n) <= 100) or (abs(2000 - n) <= 100))
+# print(near_thousand(1000))
+# print(near_thousand(800))
+# print(near_thousand(80))   
+# print(near_thousand(2200))
+
+
 # 18. calculate the sum of three given numbers, if the values are equal then return thrice of their sum.
 # def num(x, y, z):
     
@@ -99,6 +140,16 @@
 
 # print(num(2, 2, 2))    #  three numbers are equal
 # print(num(1, 2, 3))    # three numers are not equal
+
+
+# 19.Write a Python program to get a new string from a given string where "Is" has been added to the front. If the given string already begins with "Is" then return the string unchanged.
+# def new_string(str):
+#     if len(str) >= 2 and str[:2] == "Is":
+#         return str
+#     return "Is" + str
+# print(new_string("Array list tuples"))
+# print(new_string(" ")) 
+
 
 #21. Write a Python program to find whether a given number (accept from the user) is even or odd, print out an appropriate message to the user. 
 # num = int(input("Enter a number: "))
@@ -120,12 +171,28 @@
 # print('{} has occurred {} times'.format(x, count(lst, x)))
 
 
+# 23. Write a Python program to get the n (non-negative integer) copies of the first 2 characters of a given string. Return the n copies of the whole string if the length is less than 2.
+# def substring_copy(str, n):
+#       flen = 2
+#   if flen > len(str):
+#     flen = len(str)
+#   substr = str[:flen]
+  
+#   result = ""
+#   for i in range(n):
+#     result = result + substr
+#   return result
+# print(substring_copy('abcdef', 2))
+# print(substring_copy('p', 3));
+
+
 # 24. Write a Python program to test whether a passed letter is a vowel or not.
 # def is_vowel(char):
 #     all_vowels = 'aeiou'
-#     return char in all_vowels
-# print(is_vowel('p'))
-# print(is_vowel('e'))
+#     print (char in all_vowels)
+# is_vowel('p')
+# is_vowel('i')
+
 
 
 #25. Write a Python program to check whether a specified value is contained in a group of values.
@@ -137,11 +204,25 @@
 # print(is_group_member([1, 5, 8, 3], 3))
 # print(is_group_member([5, 8, 3], -1))
 
+
+#26 Write a Python program to create a histogram from a given list of integers.
+# def histogram( items ):
+#     for n in items:
+#         output = ''
+#         times = n
+#         while( times > 0 ):
+#           output += '*'
+#           times = times - 1
+#         print(output)
+# histogram([2, 7, 5, 6])
+
 #27. Write a Python program to concatenate all elements in a list into a string and return i
 # list = ['1','2','3','4'] 
 # newlist = ""
 # a = newlist.join(list) 
 # print(a) 
+
+                            
 
 
 # 28. Write a Python program to print all even numbers from a given numbers list in the same order and stop the printing if any numbers that come after 237 in the sequence. Go to the editor
@@ -192,7 +273,7 @@
 # print("The gcd of 336 and 360 is : ", end="")
 # print(math.gcd(a,b))
 
-# 32. Write a Python program to get the least common multiple (LCM) of two positive integers.
+# 32. Write a Python program to get the least common multiple (LCM) of two positive integers
 # a=int(input("enter first"))
 # b=int(input("enter second"))
 # maxnum=max(a,b)
@@ -279,15 +360,58 @@
 # result= ((((x2 - x1 )**2) + ((y2-y1)**2) )**0.5)
 # print("distance between",(x1,x2),"and",(y1,y2),"is : ",result)
 
+# 41. Write a Python program to check whether a file exists
+# import os.path
+# print(os.path.isfile('question1.py'))
+# print(os.path.isfile('trial.tf'))
+
+# 42. Write a Python program to determine if a Python shell is executing in 32bit or 64bit mode on OS.
+# import struct
+# print(struct.calcsize("i")*8)
+# print(struct.calcsize("i")*16)
+
+# 43. Write a Python program to get OS name, platform and release information.
+# import platform
+# import os
+# print("Name of the operating system:",os.name)
+# print("\nName of the OS system:",platform.system())
+# print("\nVersion of the operating system:",platform.release())
+
+# 44. Write a Python program to locate Python site-packages. 
+# import site; 
+# print(site.getsitepackages())
+
+# 46. Write a python program to get the path and name of the file that is currently executing. 
+# import os
+# print("Current File Name : ",os.path.realpath(__file__))
+
+# 47. Write a Python program to find out the number of CPUs using.
+# import multiprocessing
+# print(multiprocessing.cpu_count())
+
 # 48. Write a Python program to parse a string to Float or Integer
 # n = "246.2458"
 # print(float(n))
 # print(int(float(n)))
 
+
+
 # 50. Write a Python program to print without newline or space.
 # for i in range(0, 10):
 #     print('*', end="")
 # print("\n")
+
+# 53. Write a python program to access environment variables.
+# import os
+# # Access all environment variables 
+# print('*----------------------------------*')
+# print(os.environ)
+# print('*----------------------------------*')
+# # Access a particular environment variable 
+# print(os.environ['HOME'])
+# print('*----------------------------------*')
+# print(os.environ['PATH'])
+# print('*----------------------------------*')
 
 # 54. Write a Python program to get the current username
 # getlogin() method of OS library is used to get the current username.
@@ -337,18 +461,53 @@
 # hours = int(input("Input hours: ")) * 3600
 # minutes = int(input("Input minutes: ")) * 60
 # seconds = int(input("Input seconds: "))
-
 # time = days + hours + minutes + seconds
-
 # print("The  amounts of seconds", time)
 
+#63. Write a Python program to get an absolute file path.
+# def absolute_file_path(path_fname):
+#         import os
+#         return os.path.abspath('path_fname')        
+# print("Absolute file path: ",absolute_file_path("question1.py"))
 
+# 64. Write a Python program to get file creation  date/times. 
+# import os.path, time
+# print("Created: %s" % time.ctime(os.path.getctime("question1.py")))
+
+# 65. Write a Python program to convert seconds to day, hour, minutes and seconds.
+# time = float(input("Input time in seconds: "))
+# day = time // (24 * 3600)
+# time = time % (24 * 3600)
+# hour = time // 3600
+# time %= 3600
+# minutes = time // 60
+# time %= 60
+# seconds = time
+# print("d:h:m:s-> %d:%d:%d:%d" % (day, hour, minutes, seconds))
 
 
 # 66.Write a Python program to calculate body mass index.
 # height = float(input("Input your height in Feet: "))
 # weight = float(input("Input your weight in Kilogram: "))
 # print("Your body mass index is: ", weight / (height/100)**2  )
+
+#67. Write a Python program to convert pressure in kilopascals to pounds per square inch, a millimeter of mercury (mmHg) and atmosphere pressure
+# kpa = float(input("Input pressure in in kilopascals> "))
+# psi = kpa / 6.89475729
+# mmhg = kpa * 760 / 101.325
+# atm = kpa / 101.325
+# print("The pressure in pounds per square inch: %.2f psi"  % (psi))
+# print("The pressure in millimeter of mercury: %.2f mmHg" % (mmhg))
+# print("Atmosphere pressure: %.2f atm." % (atm))
+
+# 68. Write a Python program to calculate sum of digits of a number.
+# i=int(input("enter number: "))
+# sum=0
+# while (i>0):
+#     sum=sum+i%10
+#     i=i//10
+# print("sum of digit= ", sum)    
+
 
 # 69.Write a Python program to sort three integers without using conditional statements and loops.
 # x = int(input("Input first number: "))
@@ -359,6 +518,11 @@
 # a2 = (x + y + z) - a1 - a3     #(condition)
 # print("Numbers in sorted order: ", a1, a2, a3)
 
+
+# 70. Write a Python program to sort files by date.
+# import glob
+# files = glob.glob("*.py")
+# print("\n".join(files))
 
 # 72. Write a Python program to get the details of math module.
 # # Imports the math module
@@ -410,6 +574,14 @@
 # print("\nSum of the container: ", s)
 # print()
 
+# 83. Write a Python program to test whether all numbers of a list is greater than a certain number.
+# num = [2, 3, 4, 5]
+# print()
+# print(all(x > 1 for x in num))
+# print(all(x > 4 for x in num))
+# print()
+
+
 # 84. Write a Python program to count the number occurrence of a specific character in a string
 # s = "The quick brown fox jumps over the lazy dog."  
 # print("Original string:")
@@ -417,14 +589,30 @@
 # print("Number of occurrence of 'o' in the said string:")
 # print(s.count("o"))
 
+# 85. Write a Python program to check whether a file path is a file or a directory.
+# import os  
+# path="question1.py"  
+# if os.path.isdir(path):  
+#     print("It is a directory")  
+# elif os.path.isfile(path):  
+#     print("It is a normal file")  
+# else:  
+#     print("It is a special file (socket, FIFO, device file)" )
+# print()
 
 # 86. Write a Python program to get the ASCII value of a character
-# print()
-# print(ord('a'))
+# print(ord('a'))                       #http://sticksandstones.kstrom.com/appen.html
 # print(ord('A'))
 # print(ord('1'))
 # print(ord('@'))
+
+
+#87. Write a Python program to get the size of a file.
+# import os
+# file_size = os.path.getsize("question1.py")
+# print("The size of abc.txt is :",file_size,"Bytes")
 # print()
+
 
 # 88. Given variables x=30 and y=20, write a Python program to print "30+20=50". 
 # x = 30
@@ -484,8 +672,8 @@
 # print()
 
 # 99. Write a Python program to clear the screen or terminal
-# import.os
-# os.system("cls")
+# import os
+# os.system("clear")
 
 
 # 100. Write a Python program to get the name of the host on which the routine is running.
@@ -493,6 +681,13 @@
 # host_name = socket.gethostname()
 # print("Host name:", host_name)
 
+# 101. Write a Python program to access and print a URL's content to the console.
+# from http.client import HTTPConnection
+# conn = HTTPConnection("github.com")
+# conn.request("GET", "/")  
+# result = conn.getresponse()
+# contents = result.read() 
+# print(contents)
 
 # 103. Write a Python program to extract the filename from a given path.
 # import os
@@ -603,6 +798,16 @@
 # print('%.9s' % str_num)
 # print('%.10s' % str_num)
 
+# 121. Write a Python program to determine whether variable is defined or not
+# variable= "shukla"
+# try:
+#     a=int(variable)
+#     print("the variable is number")
+# except:
+    
+#     print("variable is string")
+#     print(isinstance(variable,str))    
+    
 #122.Write a Python program to empty a variable without destroying it.
 # d = {"x":200}
 # l = [1,3,5]
@@ -686,9 +891,9 @@
 # print(format(x, '02x'))
 
 # 144. Write a Python program to check whether variable is integer or string. 
-# print(isinstance(25,int) or isinstance(25,str))
-# print(isinstance([25],int) or isinstance([25],str))
-# print(isinstance("25",int) or isinstance("25",str))
+# print(isinstance(25,int) )      #The isinstance() function returns True if the specified object is of the specified type, otherwise False
+# print(isinstance([25],int) )
+# print(isinstance("25",str) )
 
 
 # 145. Write a Python program to test if a variable is a list or tuple or a set.
@@ -702,14 +907,6 @@
 # else:
 #     print('Neither a list or a set or a tuple.')
 
-# 147. Write a Python function to check whether a number is divisible by another number. Accept two integers values form the user.
-# def multiple(m, n):
-#     	return True if m % n == 0 else False
-
-# print(multiple(25, 5))
-# print(multiple(13, 2))
-
-
 # 149. Write a Python function that takes a positive integer and returns the sum of the cube of all the positive integers smaller than the specified number.
 # def sum_of_cubes(n):
 #      n -= 1
@@ -719,6 +916,23 @@
 #    n -= 1
 #  return total
 # print("Sum of cubes smaller than the specified number: ",sum_of_cubes(3))
+
+#150. Write a Python function to check whether a distinct pair of numbers whose product is odd present in a sequence of integer values. 
+# def odd_product(nums):
+#   for i in range(len(nums)):
+#     for j in range(len(nums)):
+#       if  i != j:
+#         product = nums[i] * nums[j]
+#         if product & 1:
+#           return True
+#   return False          
+# dt1 = [2, 4, 6, 8]
+# dt2 = [1, 6, 4, 7, 8]
+# dt3 = [1, 3, 5, 7, 9]
+# print(dt1, odd_product(dt1));
+# print(dt2, odd_product(dt2));
+# print(dt3, odd_product(dt3));
+
 
 
 
